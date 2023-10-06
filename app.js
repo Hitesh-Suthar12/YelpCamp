@@ -19,10 +19,11 @@ const mongoSanitize = require("express-mongo-sanitize");
 const userRoutes = require("./routes/users");
 const campgroundRoutes = require("./routes/campgrounds.js");
 const reviewRoutes = require("./routes/reviews.js");
-const MongoStore = require("connect-mongo");
+// const MongoStore = require("connect-mongo");
 
 const MongoDBStore = require("connect-mongo")(session);
-const dbUrl = process.env.DB_URL || "mongodb://127.0.0.1:27017/yelp-camp";
+const dbUrl = process.env.DB_URL;
+// const dbUrl = process.env.DB_URL || "mongodb://127.0.0.1:27017/yelp-camp";
 
 // Connect to MongoDB
 mongoose
@@ -93,8 +94,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 app.use((req, res, next) => {
-  // console.log(req.session);
-  console.log(req.query);
+  // console.log(req.query);
   res.locals.currentUser = req.user;
   res.locals.success = req.flash("success");
   res.locals.error = req.flash("error");
