@@ -1,7 +1,7 @@
 // this is environment variable
-// if (process.env.NODE_ENV !== "production") {
+if (process.env.NODE_ENV !== "production") {
 require("dotenv").config();
-// }
+}
 
 const express = require("express");
 const path = require("path");
@@ -22,8 +22,8 @@ const reviewRoutes = require("./routes/reviews.js");
 // const MongoStore = require("connect-mongo");
 
 const MongoDBStore = require("connect-mongo")(session);
-const dbUrl = process.env.DB_URL;
-// const dbUrl = process.env.DB_URL || "mongodb://127.0.0.1:27017/yelp-camp";
+// const dbUrl = process.env.DB_URL;
+const dbUrl = process.env.DB_URL || "mongodb://127.0.0.1:27017/yelp-camp";
 
 // Connect to MongoDB
 mongoose
@@ -126,3 +126,6 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Serving on Post ${port}`);
 });
+
+
+
