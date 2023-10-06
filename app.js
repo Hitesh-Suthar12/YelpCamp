@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 const ejsMate = require("ejs-mate");
 const session = require("express-session");
 const flash = require("connect-flash");
-// const catchAsync = require("./utils/CatchAsync");
+const catchAsync = require("./utils/CatchAsync");
 const ExpressError = require("./utils/ExpressError");
 const methodOverride = require("method-override");
 const passport = require("passport");
@@ -19,7 +19,7 @@ const mongoSanitize = require("express-mongo-sanitize");
 const userRoutes = require("./routes/users");
 const campgroundRoutes = require("./routes/campgrounds.js");
 const reviewRoutes = require("./routes/reviews.js");
-// const MongoStore = require("connect-mongo");
+const MongoStore = require("connect-mongo");
 
 const MongoDBStore = require("connect-mongo")(session);
 const dbUrl = process.env.DB_URL;
