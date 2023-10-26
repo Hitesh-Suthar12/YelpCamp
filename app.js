@@ -22,8 +22,8 @@ const reviewRoutes = require("./routes/reviews.js");
 const MongoStore = require("connect-mongo");
 
 const MongoDBStore = require("connect-mongo")(session);
-const dbUrl = process.env.DB_URL;
-// const dbUrl = process.env.DB_URL || "mongodb://127.0.0.1:27017/yelp-camp";
+// const dbUrl = process.env.DB_URL;
+const dbUrl = process.env.DB_URL || "mongodb://127.0.0.1:27017/yelp-camp";
 
 // Connect to MongoDB
 mongoose
@@ -32,6 +32,7 @@ mongoose
     useUnifiedTopology: true,
     // useCreateIndex: true,
     // useFindAndModify: false,
+    // strictQuery: false
   })
   .then(() => {
     console.log("Database Connected!!!");
