@@ -2,6 +2,7 @@
 
 <h2>PREVIEW OF HOME PAGE</h2>
 ![1 Home Page](https://github.com/Hitesh-Suthar12/YelpCamp/assets/132213565/d5535f03-b3c0-447c-9688-a4257deae43c)
+https://github.com/Hitesh-Suthar12/YelpCamp/assets/132213565/d5535f03-b3c0-447c-9688-a4257deae43c
 
 <h2>CAMPGROUND PAGE</h2>
 ![2 CampGrounds](https://github.com/Hitesh-Suthar12/YelpCamp/assets/132213565/b781b357-0664-49f2-9caa-b42e4f0f8f6a)
