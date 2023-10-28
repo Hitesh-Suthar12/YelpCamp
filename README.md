@@ -23,3 +23,7 @@
 
 ![5 Register Page](https://github.com/Hitesh-Suthar12/YelpCamp/assets/132213565/62d86b5a-998a-4dfe-9bc4-ea5e81ca02b0)
 <hr>
+
+<h2>ADD NEW CAMPGROUND</h2>
+
+![6 Add Campground](https://github.com/Hitesh-Suthar12/YelpCamp/assets/132213565/d2110f65-059f-4d57-a644-772b4a845b0f)
